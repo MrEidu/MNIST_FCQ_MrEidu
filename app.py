@@ -5,7 +5,6 @@ st.sidebar.image("https://mario.wiki.gallery/images/thumb/4/42/NSMBU_Green_Yoshi
 boton = st.button("Launch a globo")
 if boton:
   st.balloons()
-picture = st.camera_input("Take a picture")
-st.sidebar.text("The guy below is ugly!")
+picture = st.sidebar.camera_input("Take a picture")
 if picture:
-    st.sidebar.image(picture)
+    st.sidebar.text("The guy above is ugly!")
