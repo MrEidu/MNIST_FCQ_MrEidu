@@ -4,6 +4,10 @@ import keras
 from PIL import Image, ImageOps
 import numpy as np
 
+st.title("Detector de Piezas LEGO")
+st.sidebar.header("Proyecto de Machine Learning de la Facultad de Ciencias Quimicas de la Universidad Autonoma de Chihuahua")
+st.sidebar.image("https://mario.wiki.gallery/images/thumb/4/42/NSMBU_Green_Yoshi_Egg_Artwork.png/400px-NSMBU_Green_Yoshi_Egg_Artwork.png?download")
+
 uploaded_file = st.file_uploader("Carga una imagen ...", type=["jpg","jpeg","png"])
 if uploaded_file is not None:
   image = Image.open(uploaded_file)
